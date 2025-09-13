@@ -27,3 +27,4 @@ class SignupPage {
 }
 
 module.exports = { SignupPage };
+// use this class in steps file
