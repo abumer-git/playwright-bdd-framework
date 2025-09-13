@@ -1,0 +1,22 @@
+{
+  "name": "playwright-bdd-framework",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abumer-git/playwright-bdd-framework.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abumer-git/playwright-bdd-framework/issues"
+  },
+  "homepage": "https://github.com/abumer-git/playwright-bdd-framework#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.55.0",
+    "@types/node": "^24.3.3"
+  }
+}
