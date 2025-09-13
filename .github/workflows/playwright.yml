@@ -23,8 +23,11 @@ jobs:
       - name: Install Playwright Browsers
         run: npx playwright install --with-deps
 
+      # Run BDD tests in headless mode (safe for CI)
       - name: Run BDD Tests
         run: npm run bdd
+        env:
+          PLAYWRIGHT_HEADLESS: true
 
       - name: Generate HTML Report
         run: npm run bdd:report
