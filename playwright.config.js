@@ -30,7 +30,7 @@ export default defineConfig({
         // baseURL: 'http://localhost:3000',
 
         // Run headless on CI, headed locally
-        headless: !!process.env.CI,
+        headless: process.env.CI ? true : false,
 
         // disables default 1280x720
         viewport: null,
