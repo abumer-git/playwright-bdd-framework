@@ -1,14 +1,21 @@
-const { setWorldConstructor } = require('@cucumber/cucumber');
 const { chromium } = require('playwright');
+const { setWorldConstructor } = require('@cucumber/cucumber');
 
 class CustomWorld {
     async init() {
-        this.browser = await chromium.launch({ headless: true }); // headless for CI
-        this.page = await this.browser.newPage();
+        this.browser = await chromium.launch({
+            headless: false,        // <--- make it headed
+            args: ['--start-maximized'] // optional: open maximized
+        });
+        this.context = await this.browser.newContext({
+            viewport: null          // optional: disables default 1280x720 viewport
+        });
+        this.page = await this.context.newPage();
     }
 
     async close() {
         await this.page.close();
+        await this.context.close();
         await this.browser.close();
     }
 }

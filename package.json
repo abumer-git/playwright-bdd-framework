@@ -8,6 +8,7 @@
     "bdd": "cucumber-js --require ./steps/**/*.js --require ./support/world.js --format json:reports/cucumber-report.json ./features",
     "bdd:pretty": "cucumber-js --require ./steps/**/*.js --require ./support/world.js --format @cucumber/pretty-formatter ./features",
     "bdd:report": "node report-generator.js",
+    "bdd:headed": "cucumber-js --require ./steps/**/*.js --require ./support/world.js --format @cucumber/pretty-formatter ./features",
     "test:headed": "npx playwright test --headed",
     "test:report": "npx playwright show-report"
   },
