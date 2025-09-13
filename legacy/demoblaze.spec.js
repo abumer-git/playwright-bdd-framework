@@ -1,6 +1,6 @@
 // @ts-check
 const { test, expect } = require('@playwright/test');
-const { getTestData } = require('./test-data');
+const { getTestData } = require('../tests/test-data');
 const { HomePage } = require('../pages/home.page');
 const { SignupPage } = require('../pages/signup.page');
 const { LoginPage } = require('../pages/login.page');

@@ -1,0 +1,158 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "demoblaze-user-registration-and-login;open-homepage-and-check-title",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Open homepage and check title",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 300078250
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I open Demoblaze homepage",
+            "match": {
+              "location": "steps/demoblaze.steps.js:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3560847542
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 5,
+            "name": "The page title should contain \"STORE\"",
+            "match": {
+              "location": "steps/demoblaze.steps.js:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5576208
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 18542000
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "demoblaze-user-registration-and-login;user-signup-and-login",
+        "keyword": "Scenario",
+        "line": 7,
+        "name": "User signup and login",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 151595374
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "I open Demoblaze homepage",
+            "match": {
+              "location": "steps/demoblaze.steps.js:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4492826957
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "I signup with a new username",
+            "match": {
+              "location": "steps/demoblaze.steps.js:36"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2932346625
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "I should see a successful signup popup",
+            "match": {
+              "location": "steps/demoblaze.steps.js:49"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 466124
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 11,
+            "name": "I login with the same username",
+            "match": {
+              "location": "steps/demoblaze.steps.js:53"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2102976207
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "I should be logged in and see \"Welcome <username>\"",
+            "match": {
+              "location": "steps/demoblaze.steps.js:58"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2826455834
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 26634000
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "demoblaze-user-registration-and-login",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Demoblaze User Registration and Login",
+    "tags": [],
+    "uri": "features/demoblaze.feature"
+  }
+]

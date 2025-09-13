@@ -3,7 +3,14 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "test": "npx playwright test",
+    "bdd": "cucumber-js --require ./steps/**/*.js --require ./support/world.js --format json:reports/cucumber-report.json ./features",
+    "bdd:pretty": "cucumber-js --require ./steps/**/*.js --require ./support/world.js --format @cucumber/pretty-formatter ./features",
+    "bdd:report": "node report-generator.js",
+    "test:headed": "npx playwright test --headed",
+    "test:report": "npx playwright show-report"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/abumer-git/playwright-bdd-framework.git"
@@ -16,7 +23,11 @@
   },
   "homepage": "https://github.com/abumer-git/playwright-bdd-framework#readme",
   "devDependencies": {
+    "@cucumber/cucumber": "^12.2.0",
+    "@cucumber/pretty-formatter": "^2.2.0",
     "@playwright/test": "^1.55.0",
-    "@types/node": "^24.3.3"
+    "@types/node": "^24.3.3",
+    "multiple-cucumber-html-reporter": "^3.9.3",
+    "playwright": "^1.55.0"
   }
 }
